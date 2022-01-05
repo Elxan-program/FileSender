@@ -1,0 +1,22 @@
+﻿<Window x:Class="FileSender.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileSender.View"
+        mc:Ignorable="d"
+        Title="Client Sender V.3.1.12.9" Height="450" Width="800">
+    <Grid>
+        <StackPanel Background="DarkViolet">
+            <WrapPanel>
+                <Label Margin="90,0,70,0" HorizontalAlignment="Left" FontSize="24">Name :</Label>
+                <TextBox FontFamily="Comic Sans MS" FontSize="18" Name="NametxtBox" Width="290"></TextBox>
+            </WrapPanel>
+            <WrapPanel>
+                <Button Margin="140,0,0,0" Command="{Binding ConnectBtn}" Content="Connect" FontSize="24" Width="250" Height="50"></Button>
+                <Button Command="{Binding SelectBtn}" Content="Select" FontSize="24" Width="250" Height="50"></Button>
+
+            </WrapPanel>
+        </StackPanel>
+    </Grid>
+</Window>
